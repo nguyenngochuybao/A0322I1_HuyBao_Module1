@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" id="huy">
+<input type="text" id="bao">
+<br><br>
+<button onclick="cong()">Addition(+)</button>
+<button onclick="tru()">Subtraction(-)</button>
+<button onclick="nhan()">Multiplucation(X)</button>
+<button onclick="chia()">Division(/)</button>
+<h4 id="ketqua"></h4>
+<script>
+    function cong() {
+        let b = +document.getElementById("huy").value
+        let c = +document.getElementById('bao').value
+        let tong = b+c
+        document.getElementById('ketqua').innerHTML =tong
+    }
+    function tru() {
+        let a1 = document.getElementById('huy').value
+        let b1 =document.getElementById('bao').value
+        let tong1 = a1-b1
+        document.getElementById('ketqua').innerHTML=tong1
+    }
+    function nhan() {
+        let a2 = document.getElementById('huy').value
+        let b2 = document.getElementById('bao').value
+        let tong2 = a2*b2
+        document.getElementById('ketqua').innerHTML = tong2
+
+    }
+    function chia() {
+        let a3 = document.getElementById('huy').value
+        let b3 = document.getElementById('bao').value
+        let tong3 = a3/b3
+        document.getElementById('ketqua').innerHTML = tong3
+    }
+</script>
+</body>
+</html>

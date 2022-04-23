@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="border: 1px solid black; text-align: center; width: 20px; height: 45px; background-color: aquamarine">
+    <tr>
+        <td colspan="4" style="text-align: center; color: fuchsia; font-weight: 600"><smail>MÁY TÍNH MÀU MÈ</smail></td>
+    </tr>
+    <tr>
+        <td colspan="4"; height="30px"; style="border:1px solid black;background-color: white; color: blue"><span id="ketqua"></span></td>
+    </tr>
+    <tr>
+        <td><button onclick="bao('1')" style="background-color: blue">1</button></td>
+        <td><button onclick="bao('2')" style="background-color: orange">2</button></td>
+        <td><button onclick="bao('3')" style="background-color: cadetblue">3</button></td>
+        <td><button onclick="bao('+')" style="background-color: palevioletred">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="bao('4')"  style="background-color: wheat">4</button></td>
+        <td><button onclick="bao('5')"  style="background-color: purple">5</button></td>
+        <td><button onclick="bao('6')"  style="background-color: yellowgreen">6</button></td>
+        <td><button onclick="bao('-')" style="background-color: mediumslateblue">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="bao('7')" style="background-color: lightcoral">7</button></td>
+        <td><button onclick="bao('8')" style="background-color: darkcyan">8</button></td>
+        <td><button onclick="bao('9')" style="background-color: chocolate">9</button></td>
+        <td><button onclick="bao('*')" style="background-color: firebrick">X</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="bao('c')" style="background-color: fuchsia">C</button></td>
+        <td><button onclick="bao('0')" style="background-color: chartreuse">0</button></td>
+        <td><button onclick="bao('=')"  style="background-color: crimson">=</button></td>
+        <td><button onclick="bao('/')"  style="background-color: mediumseagreen">/</button></td>
+    </tr>
+</table>
+<script>
+    function bao(x) {
+        let a = document.getElementById('ketqua').innerHTML;
+        switch (x) {
+            case '1':
+            case '2':
+            case '3':
+            case '+':
+            case '4':
+            case '5':
+            case '6':
+            case '-':
+            case '7':
+            case '8':
+            case '9':
+            case '*':
+            case '0':
+            case '/':
+            a = a + x;break
+            a = a - x;break
+            a = a * x;break
+            a = a / x;break
+            case '=':
+            a = eval(a);
+            break
+            case 'c':
+            a = '';
+            break
+
+        }
+        document.getElementById('ketqua').innerHTML = a;
+    }
+</script>
+</body>
+</html>

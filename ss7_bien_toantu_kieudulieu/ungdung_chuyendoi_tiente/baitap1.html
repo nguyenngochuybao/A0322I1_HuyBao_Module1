@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>to Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="tienvietnam">
+        </td>
+        <td>
+            <select>
+                <option>
+                    Vietnam
+                </option>
+            </select>
+        </td>
+        <td>
+            <select>
+                <option>
+                    USD
+                </option>
+            </select>
+        </td>
+        <td>
+          <button style="background-color: blueviolet" onclick="a()">Convert</button>
+        </td>
+    </tr>
+</table>
+<h4 id="ketqua"></h4>
+<script>
+    function a() {
+        const tiendola = 22.000
+        let vnd = document.getElementById("tienvietnam").value
+        let tiendo = vnd * tiendola
+        document.getElementById("ketqua").innerHTML ="result:"+tiendo
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('nhập số'))
+    let b = parseFloat(prompt('nhập số'))
+    let c = parseFloat(prompt('nhập số'))
+    if (a > 0 && b > 0 && c > 0){
+        if((a+b) >c && (b+c) >a && (a+c)>b){
+            document.write(a+","+b+","+c+" là hình tam giác");
+        }else{
+            document.write(a+","+b+","+c+" ko pải là hình tam giác");
+        }
+    }else {
+        document.write(a+","+b+","+c+" ko pải là một hình tam giác");
+    }
+</script>
+</body>
+</html>
