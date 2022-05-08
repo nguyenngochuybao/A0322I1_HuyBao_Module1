@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển Tiếng Anh</title>
+</head>
+<body>
+    <h1>Từ điển tiếng anh</h1>
+    <input type="text" placeholder="Nhập từ cần tìm" id="bao1">
+    <button onclick="bao()">Tìm kiếm</button>
+    <p id="ketqua"></p>
+<script>
+    let tiengAnh = ['Red','Black','White','Blue','Pink','Orange','Yellow']
+    let tiengViet = ['Đỏ','Đen','Trắng','Xanh','Hồng','Cam','Vàng']
+    function bao() {
+        let a = document.getElementById('bao1').value
+        let b = tiengAnh.indexOf(a)
+        if (b !=-1){
+            document.getElementById('ketqua').innerText = tiengViet[b]
+        }else {
+            alert('Vui lòng nhập lại')
+        }
+    }
+   
+</script>
+</body>
+</html>

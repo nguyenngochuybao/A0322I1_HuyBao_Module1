@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array(prompt("Nhập vào một chuỗi"))
+    let b = []
+    document.write("Mảng gồm ["+mang+"]<br>")
+    for (let i=0; i<a.length ; i++){
+        for (let j=0; j<a[i].length; j++){
+            if(a[i][j] == "-"){
+                a[i][j] = "_"
+                b.push("_")
+            }else{
+                b.push(a[i][j])
+            }
+
+        }
+    }
+    document.write("Mảng sửa gồm ["+b.join("")+"]<br>")
+</script>
+</body>
+</html>
