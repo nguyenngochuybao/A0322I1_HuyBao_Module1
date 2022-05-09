@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>CHÒM SAO BẠN MUỐN BIẾT</h2>
+<p>Các ngôi sao:[Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus]</p>
+<input placeholder="Nhập sao vào đây" type="text" id="sao">
+<button onclick="chomSao()">Tìm kiếm</button>
+<p id="ketqua"></p>
+<script>
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    function chomSao() {
+        let c=document.getElementById("sao").value
+        let d=a.indexOf(c)
+        if (d!=-1){
+            document.getElementById('ketqua').innerText = "Đây là chòm sao: " +b[d]
+
+        }else {
+            alert('Không có sao này')
+        }
+    }
+</script>
+</body>
+</html>

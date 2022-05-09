@@ -5,6 +5,26 @@
     <title></title>
 </head>
 <body>
-
+<h2>Chuyển đổi giữa feet và meters</h2>
+<h3>feet => meters</h3>
+<input type="text" id="nhapSo"; placeholder="Nhập số vào đây">
+<button onclick="huyBao()">Chuyển đổi</button>
+<p id="ketQua"></p>
+<h3>meters => feet</h3>
+<input type="text" id="nhapSo1"; placeholder="Nhập số vào đây">
+<button onclick="huyBao1()">chuyển đổi</button>
+<p id="ketQua1"></p>
 </body>
+<script>
+    function huyBao() {
+       let feet = document.getElementById('nhapSo').value
+       let c = 0.305 * feet
+        document.getElementById('ketQua').innerHTML = c+' meters'
+    }
+    function huyBao1() {
+        let meter = document.getElementById('nhapSo1').value
+        let d = 3.279 * meter
+        document.getElementById('ketQua1').innerHTML = d + ' feet'
+    }
+</script>
 </html>
