@@ -5,18 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<input type="submit" onclick="out()" value="Result"/>
 <script>
-    function hienThi(huyBao) {
-        huyBao++;
-            return doiSo;
+    function hienthtangso(a) {
+        a++
+        return a
     }
-    function out() {
-        let a = parseInt(prompt("Nhập giá trị: "));
-        let b = hienThi(a);
-        alert(b);
+    function nhapSo() {
+        let b = hienthtangso(parseInt(prompt('Nhập số vào đây')))
+        document.write(b)
     }
-
+    nhapSo()
 </script>
 </body>
 </html>

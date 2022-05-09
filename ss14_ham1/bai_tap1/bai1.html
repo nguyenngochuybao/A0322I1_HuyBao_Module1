@@ -2,35 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hàm kiểm tra số nguyên tố</title>
+    <title>Title</title>
 </head>
 <body>
-<h2>Hàm kiểm tra số nguyên tố</h2>
-<input type="text" id="nhapso">
-<input type="button" value="Kiểm tra" onclick="soNguyenTo()">
 <script>
-    function isPrime(number) {
-        if(number<=1) return false
-        else if(number == 2 || number == 3) return true
-        else if(number %2 == 0 )return false
-        else {
-            for (i=3; i<number; i+=2){
-                if(number%i == 0){
-                    return false
+  function huyBao(number) {
+        if (number<=1){
+         document.write(number+'ko pải là số nguyên tố')
+        }else {
+            let dem = 0
+            for (let i=2;i<=Math.sqrt(number);i++){
+                if (number % i ==0){
+                    dem++
                 }
+            }if (dem==0){
+                document.write(number+' là số nguyên tố')
+            }else {
+                document.write(number+' ko pải là số nguyên tố')
             }
         }
-        return true
-    }
-    function soNguyenTo() {
-        let so = document.getElementById("nhapso")
-        let kiemtra = isPrime(so.value)
-        if(kiemtra){
-            alert(so.value+ " là một số nguyên tố")
-        }else{
-            alert(so.value+ " không phải số nguyên tố")
-        }
-    }
+  }
+  let a = parseInt(prompt('nhập số'))
+    huyBao(a)
 </script>
 </body>
 </html>

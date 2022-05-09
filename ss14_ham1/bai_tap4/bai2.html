@@ -6,19 +6,17 @@
 </head>
 <body>
 <script>
-    let a = prompt("Nhập giá trị :");
-    function tinh(a) {
-        let dienTich = Math.pow(a,2)* 3.14;
-        return dienTich;
-    }
-    document.write("Diện tích hình tròn là :" + tinh(a) +"<br>");
-
-
-    function tinhCv(a) {
-        let chuVi = 2 * a * 3.14;
-        return chuVi;
-    }
-    document.write("Chu vi hình tròn là :" + tinhCv(a));
+   function tinhDt() {
+       dientich = a*a*3.14
+       document.write("Diện tích hình tròn là: "+dientich+'<br>')
+   }
+   function tinhCv() {
+       chuvi= 2*a*3.14
+       document.write("Chu vi hình tròn là: "+chuvi+'<br>')
+   }
+   let a=parseInt(prompt("Nhập số vào đây"))
+    tinhDt(a)
+    tinhCv(a)
 </script>
 </body>
 </html>

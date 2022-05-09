@@ -6,18 +6,17 @@
 </head>
 <body>
 <script>
-    function kiemTra(i) {
-        if(i%2 == 0 || i%2 == 1){
-            return true;
-        }
-        return false;
-    }
-    let n = prompt("Nhập vào ");
-    let check = kiemTra(n);
-    if(check){
-        alert("Đây là số");
-    }else{
-        alert("Đây là chuỗi");
+   function kiemtra(i) {
+       if (i%2==0 || i%2==1){
+           return true
+       } return false
+   }
+   let a=parseInt(prompt("nhập số vào đây"))
+    let check=kiemtra(a)
+    if (check){
+        alert('kiểu số')
+    }else {
+        alert('kiểu chuỗi')
     }
 </script>
 </body>

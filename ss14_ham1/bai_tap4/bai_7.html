@@ -6,14 +6,14 @@
 </head>
 <body>
 <script>
-    let num1 = prompt("Nhập số thứ nhất")
-    let num2 = prompt("Nhập số thứ hai")
-    let ketQUa = doiCho2So(num1,num2)
-    document.write("Đổi chỗ 2 số: "+ketQUa[0] +" , "+ketQUa[1])
-    function doiCho2So(num1, num2) {
-        let mang= [num2,num1]
-        return mang
-    }
+  function bao(a,b) {
+        let mang=[b,a]
+      return mang
+  }
+    let c = parseInt(prompt('nhập số'))
+    let d = parseInt(prompt('nhập số'))
+   let e = bao(c,d)
+    document.write('đổi số '+e[0]+','+e[1])
 </script>
 </body>
 </html>

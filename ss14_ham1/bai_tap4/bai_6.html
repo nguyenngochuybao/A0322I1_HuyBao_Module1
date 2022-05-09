@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    function huyBao(a) {
-        if(a > 0){
-            alert("Số"  + a + "là số nguyên dương");
-        }else {
-            alert("Số " + a + " là số nguyên âm");
-        }
-    }
-    while (true){
-        let b = parseInt(prompt("Nhập 1 số bất kỳ"));
-        huyBao(b);
+  function bao(i) {
+      if (i>0){
+          return true
+      }return false
+  }let a = parseInt(prompt('nhập số'))
+    let check = bao(a)
+    if (check){
+        alert('số dương')
+    }else {
+        alert('số âm')
     }
 </script>
 </body>
